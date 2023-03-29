@@ -1,15 +1,11 @@
 @font-face {
     font-family: "extrabold";
-    src: url(../../fonts/Inter-ExtraBold.ttf) format('ttf');
-    font-weight: normal;
-    font-style: normal;
+    src: url(../../fonts/Inter-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: "interlight";
-    src: url(../../fonts/Montserrat-Light.ttf) format('ttf');
-    font-weight: normal;
-    font-style: normal;
+    src: url(../../fonts/Montserrat-Light.ttf);
 }
 
 $bold: 'extrabold', sans-serif;

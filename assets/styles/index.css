@@ -1,14 +1,10 @@
 @font-face {
   font-family: "extrabold";
-  src: url(../../fonts/Inter-ExtraBold.ttf) format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url(../../fonts/Inter-ExtraBold.ttf);
 }
 @font-face {
   font-family: "interlight";
-  src: url(../../fonts/Montserrat-Light.ttf) format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url(../../fonts/Montserrat-Light.ttf);
 }
 * {
   margin: 0;
@@ -149,4 +145,51 @@ header p {
 }
 .headline button {
   margin-top: 50px;
+}
+
+.section1 {
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+.section1 .twice {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section1 .twice div {
+  margin: 0 auto;
+  text-align: center;
+}
+.section1 .twice div h3 {
+  margin: 20px;
+}
+.section1 .twice div h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section1 .twice div .twice-img {
+  margin: 20px;
+}
+.section1 .twice div p {
+  margin: 40px 125px 40px 125px;
+  text-align: justify;
+}
+
+.section2 {
+  padding: 50px;
+}
+.section2 form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section2 form div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section2 form div label {
+  text-transform: uppercase;
+  color: rgb(85, 80, 80);
+  font-family: sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=index.css.map */
