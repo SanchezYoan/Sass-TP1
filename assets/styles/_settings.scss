@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "extrabold";
+    src: url(../../fonts/Inter-ExtraBold.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "interlight";
+    src: url(../../fonts/Montserrat-Light.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bold: 'extrabold', sans-serif;
+$light: 'interlight', sans-serif;
+$color1: whitesmoke;
+$color3: rgb(22,22,22);
+$color2: rgb(85, 80, 80);
+
+
+// MIXINS
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: $light;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+body {
+    background: url(./../img/bg.jpg) center/cover;
+}
+
+nav, section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1 {
+    background: white;
+    padding: 0 40px 0 0;;
+}
+.section2 {
+    background: white;
+}
+li {
+    list-style: none;
+}
+
+button {
+    padding: 15px 50px;
+    background: none;
+    border: 3px solid black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 800;
+}

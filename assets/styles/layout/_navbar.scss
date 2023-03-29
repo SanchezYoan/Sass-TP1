@@ -1,0 +1,35 @@
+nav {
+    color: $color1;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(216, 207, 207, 0.226);
+    text-align: left;
+
+    .nav-left ul {
+        display: flex;
+        text-transform: uppercase;
+        font-family: $light;
+
+        li {
+            font-size: 0.8rem;
+            padding: 20px;
+            letter-spacing: 1px;
+            font-weight: 800;
+
+            &:hover {
+                background: white;
+                color: black;
+                pointer-events:visible;
+            }
+        }
+    }
+    .nav-right ul {
+        display: flex;
+        color: white;
+
+        li a i {
+            margin: 20px;
+            color: white;
+        }
+    }
+}
