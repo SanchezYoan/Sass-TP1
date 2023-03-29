@@ -165,6 +165,7 @@ header p {
 .section1 .twice div h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: sans-serif;
 }
 .section1 .twice div .twice-img {
   margin: 20px;
@@ -181,15 +182,71 @@ header p {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.section2 form div {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.section2 form div label {
+.section2 form label {
   text-transform: uppercase;
   color: rgb(85, 80, 80);
   font-family: sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
+}
+.section2 form .form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section2 form .form-left input {
+  height: 40px;
+}
+.section2 form .form-left button {
+  width: 42%;
+}
+.section2 form .form-right {
+  margin: 50px;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  align-items: center;
+}
+.section2 form .form-right div {
+  display: grid;
+  grid-template-areas: "cladress lbadress" "clphone lbphone" "clemail lbemail" "clsocial lbsocial";
+}
+.section2 form .form-right div .ad {
+  display: flex;
+  flex-direction: column;
+}
+.section2 form .form-right div .adress {
+  grid-area: cladress;
+}
+.section2 form .form-right div #adress {
+  grid-area: lbadress;
+}
+.section2 form .form-right div .phone {
+  grid-area: clphone;
+}
+.section2 form .form-right div #phone {
+  grid-area: lbphone;
+}
+.section2 form .form-right div .email {
+  grid-area: clemail;
+}
+.section2 form .form-right div #email {
+  grid-area: lbemail;
+}
+.section2 form .form-right div .social {
+  grid-area: clsocial;
+}
+.section2 form .form-right div #social {
+  grid-area: lbsocial;
+}
+.section2 form .form-right div ul {
+  display: flex;
+}
+.section2 form .form-right div ul li {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.section2 form .form-right div ul li a i {
+  color: black;
 }/*# sourceMappingURL=index.css.map */

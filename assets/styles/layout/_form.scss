@@ -2,22 +2,86 @@
 
 .section2 {
     padding: 50px;
-
     form {
         display: grid;
         grid-template-columns: 50% 50%;
-
-        div {
+        
+        label {
+            text-transform: uppercase;
+            color: $color2;
+            font-family: sans-serif;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .form-left {
             display: flex;
             flex-direction: column;
             gap: 30px;
 
-            label {
-                text-transform: uppercase;
-                color: $color2;
-                font-family: sans-serif;
-                font-weight: 800;
-                letter-spacing: 1px;
+            input {
+                height: 40px;
+            }
+            button {
+                width: 42%;
+                ;
+            }
+           
+        }
+        .form-right {
+            margin: 50px;
+            display: grid;
+            grid-template-rows: 25% 25% 25% 25%;
+            align-items: center;
+
+            div {
+                display: grid;
+                grid-template-areas: 
+                "cladress lbadress"
+                "clphone lbphone"
+                "clemail lbemail"
+                "clsocial lbsocial";
+
+                .ad {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .adress {
+                    grid-area: cladress;
+                }
+                #adress {
+                    grid-area: lbadress;
+                }
+                .phone {
+                    grid-area: clphone;
+                }
+                #phone {
+                    grid-area: lbphone;
+                }
+                .email {
+                    grid-area: clemail;
+                }
+                #email {
+                    grid-area: lbemail;
+                }
+                .social {
+                    grid-area: clsocial;
+                }
+                #social {
+                    grid-area: lbsocial;
+                }                   
+                ul {
+                    display: flex;                    
+                    li {
+                        padding: 20px;
+                        border: 1px solid black;
+                        border-radius: 50px;
+                        margin-right: 20px;
+                        
+                        a i {
+                            color: black;
+                        }
+                    }
+                }
             }
         }
     }

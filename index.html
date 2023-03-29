@@ -87,9 +87,9 @@
             <form action="send">
                 <div class="form-left">
                     <label for="name">name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" cols="20" rows="10">
                     <label for="email">email</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" cols="20" rows="10">
                     <label for="message">message</label>
                     <textarea name="message" id="message" cols="20" rows="10"></textarea>
                     <button>send message</button>
@@ -97,22 +97,25 @@
                 <div class="form-right">
                     <div>
                         
-                        <label for="address">address</label>
-                        <p id="address">1234 Somewhere Road #87257 Nashville, TN 00000-0000</p>
+                        <label class="adress" for="address">address</label>
+                        <div class="ad">
+                            <p id="address">1234 Somewhere Road #87257</p>
+                            <p>Nashville, TN 00000-0000</p>
+                        </div>
                     </div>
                     <div>
 
-                        <label for="phone">phone</label>
+                        <label class="phone" for="phone">phone</label>
                         <p id="phone">(000) 000-0000</p>
                     </div>
                     <div>
 
-                        <label for="email">email</label>
+                        <label class="email" for="email">email</label>
                         <p id="email">info@untiled.ltd</p>
                     </div>
                     <div>
 
-                        <label for="social"></label>
+                        <label for="social">social</label>
                         <ul>
                             <li>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
